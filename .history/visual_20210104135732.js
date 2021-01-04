@@ -7,7 +7,7 @@ export class Visual {
 
     this.texture = PIXI.Texture.from("particle.png");
 
-    this.particles = [];
+    this.particle = [];
 
     this.mouse = {
       x: 0,
@@ -25,7 +25,7 @@ export class Visual {
 
     this.container = new PIXI.ParticleContainer(this.pos.length, {
       vertices: false,
-      position: true,
+      position: false,
       rotation: false,
       scale: false,
       uvs: false,

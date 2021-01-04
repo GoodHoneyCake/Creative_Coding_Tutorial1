@@ -1,3 +1,4 @@
+// import { Text } from "./text.js";
 import { Visual } from "./visual.js";
 
 class App {

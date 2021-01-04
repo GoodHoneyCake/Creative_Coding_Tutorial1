@@ -18,9 +18,9 @@ export class Text {
     const fontSize = 800;
     const fontName = "Hind";
 
-    this.ctx.clearRect(0, 0, stageWidth, stageHeight);
+    this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
     this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
-    this.ctx.fillStyle = `rgba(0, 0, 0, 0.3)`;
+    this.ctx.fillStyle = `rgba(0,0,0,0.3)`;
     this.ctx.textBaseline = `middle`;
     const fontPos = this.ctx.measureText(myText);
     this.ctx.fillText(
@@ -47,7 +47,7 @@ export class Text {
       if (slide == 1) {
         width += 6;
       }
-      for (width; width < stageWidth; width += density) {
+      for (let width = 0; width < stageWidth; width += density) {
         pixel = imageData[(width + height * stageWidth) * 4 - 1];
         if (
           pixel != 0 &&
@@ -60,6 +60,7 @@ export class Text {
         }
       }
     }
+
     return particles;
   }
 }

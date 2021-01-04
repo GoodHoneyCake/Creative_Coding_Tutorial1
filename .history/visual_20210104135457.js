@@ -16,7 +16,6 @@ export class Visual {
     };
     document.addEventListener("pointermove", this.onMove.bind(this), false);
   }
-
   show(stageWidth, stageHeight, stage) {
     if (this.container) {
       stage.removeChild(this.container);
@@ -25,7 +24,7 @@ export class Visual {
 
     this.container = new PIXI.ParticleContainer(this.pos.length, {
       vertices: false,
-      position: true,
+      position: false,
       rotation: false,
       scale: false,
       uvs: false,

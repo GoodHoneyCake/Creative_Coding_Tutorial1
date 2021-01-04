@@ -18,9 +18,9 @@ export class Text {
     const fontSize = 800;
     const fontName = "Hind";
 
-    this.ctx.clearRect(0, 0, stageWidth, stageHeight);
+    this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
     this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
-    this.ctx.fillStyle = `rgba(0, 0, 0, 0.3)`;
+    this.ctx.fillStyle = `rgba(0,0,0,0.3)`;
     this.ctx.textBaseline = `middle`;
     const fontPos = this.ctx.measureText(myText);
     this.ctx.fillText(
@@ -59,7 +59,7 @@ export class Text {
           particles.push({ x: width, y: height });
         }
       }
+      return particles;
     }
-    return particles;
   }
 }
