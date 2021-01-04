@@ -54,7 +54,7 @@ export class Visual {
         const tx = item.x + Math.cos(angle) * minDist;
         const ty = item.y + Math.sign(angle) * minDist;
         const ax = tx - this.mouse.x;
-        const ay = ty - this.mouse.y;
+        const ay = tx - this.mouse.y;
         item.vx -= ax;
         item.vy -= ay;
       }

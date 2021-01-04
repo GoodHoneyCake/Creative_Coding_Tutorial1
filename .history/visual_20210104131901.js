@@ -6,7 +6,7 @@ export class Visual {
   constructor() {
     this.text = new Text();
 
-    this.texture = PIXI.Texture.from("particle.png");
+    this.texture = new PIXI.Texture.from("particle.png");
 
     this.particles = [];
 

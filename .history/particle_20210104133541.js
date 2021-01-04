@@ -18,8 +18,8 @@ export class Particle {
     this.radius = 10;
   }
   draw() {
-    this.x += (this.savedX - this.x) * MOVE_SPEED; //vx
-    this.y += (this.savedY - this.y) * MOVE_SPEED; //vy
+    this.x += (this.savedX - this.x) * MOVE_SPEED;
+    this.y += (this.savedY - this.y) * MOVE_SPEED;
 
     this.vx *= FRICTION;
     this.vy *= FRICTION;
